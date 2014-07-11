@@ -1,0 +1,17 @@
+.breadcrumbs {
+  margin:-1em 0 0 0;
+  padding:0;
+  background-color:transparent;
+  font-size:0.8em;
+
+  li+li:before {
+      color:$brand-primary;
+    }
+
+  li a {
+    color:$brand-primary;
+    &:hover {
+      color:#fff;
+    }
+  }
+}

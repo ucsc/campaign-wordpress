@@ -1,0 +1,81 @@
+.primary {
+  border-bottom: 1px solid $brand-primary;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+  font-weight:300;
+
+  .navbar {
+    min-height: 0px;
+
+      a {
+        padding:10px 12px;       
+        margin-right:0.25em;
+        color:$brand-primary;
+        &:focus,
+        &:hover,
+        &:active {
+          background-color:rgb(211, 27, 94);
+          color: #fff;
+        }
+      }
+
+      .dropdown-menu li a {
+        margin-right: 0;
+      }
+
+  }
+  .navbar-right .btn-danger,
+  .btn.btn-primary {
+    color:#ffffff;
+    border-radius:5px;
+    &:focus,
+    &:hover,
+    &:active {
+      background-color:$brand-primary;
+      border:1px solid $brand-primary;
+    }
+
+  }
+
+  .btn.btn-primary { margin-top: 1em; }
+
+}
+
+@media only screen and (min-width : $bp-md) {
+
+.primary {
+  border-top: 1px solid $brand-primary;
+  border-bottom: 1px solid $brand-primary;
+  margin: 1.2em 0 0.2em 0;
+  padding: 0.4em 0em;
+  font-weight:300;
+
+  .col-md-12 {
+    padding-left:0;
+  }
+
+  .navbar {
+    margin-bottom:0;
+    padding-left:0;
+
+    .navbar-nav > li a { border-radius:6px; }
+    .navbar-nav > li li a { border-radius:0px; }
+
+      a {
+        &:focus,
+        &:hover,
+        &:active {
+          background-color:rgb(211, 27, 94);
+          color: #fff;
+        }
+      }
+    }
+
+  .navbar-collapse {
+    padding-left:0;
+    padding-right:0;
+    }
+}
+
+}
+

@@ -1,0 +1,58 @@
+{
+  "name": "campaign-wordpress",
+  "version": "2.0.0",
+  "authors": [
+    "Rob Knight <raknight@ucsc.edu>"
+  ],
+  "description": "Campaign theme for Wordpress",
+  "keywords": [
+    "wordpress",
+    "theme",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "homepage": "http://campaign.ucsc.edu",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "~2.7.1",
+    "respond": "~1.4.2",
+    "bootstrap-sass": "~3.0.2",
+    "flexslider": "*",
+    "fitvids": "~1.1.0",
+    "masonry": "~3.1.5",
+    "imagesloaded": "~3.1.8"
+  },
+  "overrides": {
+    "jquery": {
+      "main": "dist/jquery.js"
+    },
+    "bootstrap-sass": {
+      "main": "dist/js/bootstrap.js"
+    },
+    "flexslider": {
+      "main": "jquery.flexslider.js"
+    },
+    "fitvids": {
+      "main": "jquery.fitvids.js"
+    },
+    "masonry": {
+      "main": "dist/masonry.pkgd.js"
+    },
+    "imagesloaded": {
+      "main": "imagesloaded.pkgd.js"
+    },
+    "modernizr": {
+      "main": "modernizr.js"
+    },
+    "respond": {
+      "main": "dest/respond.min.js"
+    }
+  }
+}

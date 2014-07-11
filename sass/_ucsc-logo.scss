@@ -1,0 +1,23 @@
+.logo {
+  display:block;
+  width:320px;
+  height:60px;
+  background:transparent url('images/ucsantacruz-qa.svg') no-repeat center bottom;
+  background-size: 320px 60px;
+  margin: 1em auto;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color:transparent;
+  }
+
+  @media only screen and (min-width : $bp-sm) {
+    float:right;
+    margin:0;
+    width:326px;
+    height:82px;  
+    background-size: 326px 64px;
+  }
+
+}

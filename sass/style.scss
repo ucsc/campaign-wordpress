@@ -1,0 +1,153 @@
+/*!
+Theme Name: Campaign for UC Santa Cruz
+Theme URI: http://campaign.ucsc.edu
+Description: Custom theme for The Campaign for UC Santa Cruz.
+Author: Rob Knight
+Author URI: http://www.ucsc.edu
+Version: 1.0
+Tags: gold, pink, blue, two-columns, fluid-width
+
+General comments (optional).
+*/
+
+@import 'bourbon';
+@import 'variables';
+@import 'bootstrap';
+@import 'wordpress-generated';
+@import 'site-title';
+@import 'ucsc-logo';
+@import 'primary-navigation';
+@import 'breadcrumbs';
+@import 'home-priorities-list';
+@import 'home-progress-graphic';
+@import 'home-featured-slider';
+
+
+/**
+*		BASE STYLES
+*/
+
+* { box-sizing: border-box; }
+
+html {
+  height: 100%;
+}
+
+body {
+	color: $brand-primary;
+	background-color:$body-bg;
+	padding-top:3em;
+	background-repeat:no-repeat;
+	padding-bottom:140px;
+}
+
+.container-fluid {
+	max-width:1080px;
+	margin:0 auto;
+	padding:0 15px;
+}
+
+h1,h2,h3,h4,h5,h6,
+.primary .navbar .nav li a {
+	font-family: $family-accent;
+	font-weight:300;
+	text-transform:uppercase;
+}
+
+h3,h4,h5,h6 {
+	text-transform:none;
+}
+
+a {
+	color:$brand-link;
+	&:focus,
+	&:hover,
+	&:active {
+		background-color:$brand-link;
+		color: #fff;
+		text-decoration: none;
+	}
+	@include transition (all 0.25s ease-in-out);
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+header {
+	margin-bottom: 3em;
+}
+
+[class^='col-'] > :first-child { margin-top:0; }
+
+/**
+*		RANDOMS
+*/
+
+.widget > .title {
+	margin-top:0;
+}
+
+.profiles {
+  width:360px;
+  img {
+    width:100%;
+    height:auto;
+	}
+}
+
+
+h3 small {
+	display:block;
+	margin-bottom:0.25em;
+	font-weight:300;
+	color:$brand-primary;
+	font-family:$family-accent;
+}
+
+.page-title {
+	margin-bottom:1em;
+}
+
+.btn-alert {
+	&:hover,
+	&:focus,
+	&:active {
+		color:#fff;
+	}
+}
+
+
+
+/**
+*		MEDIA QUERIES
+*/
+
+
+
+
+/* Retina CSS */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+
+		.logo {
+	        background-size: 326px 64px;
+	     }
+
+}
+
+/* Retina CSS */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width : $bp-sm),
+    only screen and (-o-min-device-pixel-ratio: 3/2) and (min-width : $bp-sm),
+    only screen and (min--moz-device-pixel-ratio: 1.5) and (min-width : $bp-sm),
+    only screen and (min-device-pixel-ratio: 1.5) and (min-width : $bp-sm) {
+
+		.logo {
+	        background-size: 320px 60px;
+	     }
+
+}
+

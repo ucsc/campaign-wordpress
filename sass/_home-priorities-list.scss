@@ -1,0 +1,23 @@
+.widget_nav_menu {
+  @include clearfix;
+  padding:1em;
+  border-radius:5px;
+  background-color:$block-bg;
+  margin:1em 0;
+  
+  ul {
+    margin:0;
+    padding:0;
+    width:100%;
+    
+    li {
+      float:left;
+      width:44%;
+      padding:0;
+      margin:0 2% 0 4%;
+      li {
+        width:100%;
+      }
+    }
+  }
+}
