@@ -40,9 +40,14 @@ gulp.task('scripts', function() {
 });
 
 // Copy font files into the build folder.
-gulp.task('fonts', function() {
-  gulp.src(['./bower_components/bootstrap-sass/dist/fonts/*', './bower_components/flexslider/fonts/*'])
+gulp.task('fonts:bootstrap', function() {
+  gulp.src('./bower_components/bootstrap-sass/dist/fonts/*')
   .pipe(gulp.dest(pkg.directories.lib+pkg.name+'/fonts'));
+});
+
+gulp.task('fonts:flexslider', function() {
+  gulp.src('./bower_components/flexslider/fonts/*')
+  .pipe(gulp.dest(pkg.directories.lib+pkg.name+'/lib/fonts'));
 });
 
 // Copy files into the build folder.
@@ -73,4 +78,4 @@ gulp.task('watch', function () {
 });
 
 // The default task (called when you run `gulp`)
-gulp.task('default', ['styles', 'bower-files', 'scripts', 'fonts', 'svg', 'copy', 'watch']);
+gulp.task('default', ['styles', 'bower-files', 'scripts', 'fonts:bootstrap', 'fonts:flexslider', 'svg', 'copy', 'watch']);
