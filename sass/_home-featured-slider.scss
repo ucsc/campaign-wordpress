@@ -16,7 +16,7 @@
 
   .flex-caption {
     position: absolute;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     border:none;
     height:100%;
     width:42%;
@@ -24,7 +24,7 @@
     top:0;
     left:0;
     margin:0;
-    font-size:1.8em;
+    font-size:1.5em;
     padding:0.5em 0.6em;
     font-family: $family-accent;
     background-color: rgba(0,0,0,0.4);
