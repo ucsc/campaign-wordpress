@@ -18,7 +18,7 @@ var pkg = require('./package.json'),
 // Compile sass into CSS.
 gulp.task('styles', function () {
   return gulp.src('./sass/style.scss')
-    .pipe(sass({sourcemap: true, require: ['bourbon'], loadPath: 'bower_components/bootstrap-sass/lib'}))
+    .pipe(sass({sourcemap: false, require: ['bourbon'], loadPath: 'bower_components/bootstrap-sass/lib'}))
     .pipe(gulp.dest(pkg.directories.lib+pkg.name))
     .pipe(reload());
 });
