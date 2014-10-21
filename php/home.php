@@ -2,13 +2,13 @@
 
 <div class="row">
 
-  <section class="col-xs-4 col-sm-4 col-md-3">
+  <section class="col-sm-4 col-md-3">
     <?php if ( ! dynamic_sidebar( 'Home page left' ) ) : ?>
 
     <?php endif; ?>
   </section>
 
-  <section class="col-xs-8 col-md-6 col-sm-8">
+  <section class="col-md-6 col-sm-8">
 
     <?php $the_query = new WP_Query( 'category_name=featured&orderby=ID&posts_per_page=4' ); ?>
 
