@@ -56,9 +56,9 @@
       <?php endif; ?>      
       
     </ul>
-    <p><a class="btn btn-alert pull-right" href="/category/news/">More news &raquo;</a></p>
+    
   <?php endif; ?>
-
+  <p><a class="btn btn-alert pull-right" href="/category/news/">More news &raquo;</a></p>
     
 
   </section>  
