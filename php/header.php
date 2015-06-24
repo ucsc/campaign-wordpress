@@ -43,9 +43,9 @@ if ($paged >= 2 || $page >= 2) {
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri();?>">
 
 	<!-- OpenGraph meta -->
-	<meta content="{{ page.title }}" property="og:title">
-	<meta content="http://campaign.ucsc.edu{{ page.url }}" property="og:url">
-	<meta content="{{ site.description }}" property="og:description">
+	<meta content="<?php the_title(); ?>" property="og:title">
+  <meta content="<?php the_permalink(); ?>" property="og:url">
+  <meta content="<?php bloginfo('description');?>" property="og:description">
 	<meta content="website" property="og:type">
 	<meta content="http://campaign.ucsc.edu/assets/images/dontgivein-promo.jpg" property="og:image">
 	<meta content="<?php bloginfo('name');?>" property="og:site_name">
