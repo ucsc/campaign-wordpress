@@ -60,7 +60,9 @@
   <?php endif; ?>
   <p><a class="btn btn-alert pull-right" href="/category/news/">More news &raquo;</a></p>
     
+  <?php if ( ! dynamic_sidebar( 'Home page right bottom' ) ) : ?>
 
+  <?php endif; ?>     
   </section>  
 
 </div>  
