@@ -76,7 +76,6 @@ wp_head();
 			<div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 site-title">
 				<h1>
           <a href="<?php echo esc_url(home_url('/'));?>" rel="home">
-            <img src="<?php header_image();?>" alt="" class="hidden-xs" />
             <?php echo str_replace('for', 'for<br />', get_bloginfo('name'));?>
           </a>
         </h1>
