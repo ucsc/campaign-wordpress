@@ -19,14 +19,14 @@
 		<li class="older-entries">
 			<?php if( get_next_posts_link() ) :
 
-				next_posts_link( '« Older entries', 0 );
+				next_posts_link( '« Older news', 0 );
 
 			endif; ?>
 		</li>
 		<li class="newer-entries">
 			<?php if( get_previous_posts_link() ) :
 
-				previous_posts_link( 'Newer entries »' );
+				previous_posts_link( 'Newer news »' );
 
 			endif; ?>
 		</li>
