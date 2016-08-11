@@ -11,7 +11,28 @@
         
 <?php endwhile; else: ?>
   <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-<?php endif; ?>      
+<?php endif; ?>
+
+
+<nav class="pagination">
+	<ul>
+		<li class="older-entries">
+			<?php if( get_next_posts_link() ) :
+
+				next_posts_link( '« Older entries', 0 );
+
+			endif; ?>
+		</li>
+		<li class="newer-entries">
+			<?php if( get_previous_posts_link() ) :
+
+				previous_posts_link( 'Newer entries »' );
+
+			endif; ?>
+		</li>
+	</ul>
+</nav>
+      
                
 <?php get_sidebar(); ?>        
 <?php get_footer(); ?>
