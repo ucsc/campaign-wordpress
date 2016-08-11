@@ -26,7 +26,7 @@
 		<li class="newer-entries">
 			<?php if( get_previous_posts_link() ) :
 
-				previous_posts_link( 'Newer news »' );
+				previous_posts_link( 'More recent news »' );
 
 			endif; ?>
 		</li>
