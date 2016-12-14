@@ -43,7 +43,7 @@
     bottom:0;
     width:100%;
     background-color:#FFC20E;
-    height: 68%;
+    height: 80%;
     z-index:1;
     animation: value 3s;
     -webkit-animation: value 3s;
@@ -52,12 +52,12 @@
 
 @-webkit-keyframes value{
   0%{height:0px;}
-  100%{height: 68%;}
+  100%{height: 80%;}
 }
 
 @keyframes value {
   0%{height:0px;}
-  100%{height: 68%;}
+  100%{height: 80%;}
 }
 
 
