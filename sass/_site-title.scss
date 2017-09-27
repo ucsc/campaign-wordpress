@@ -1,3 +1,28 @@
+.closed-message {
+  display: block;
+  width: 100%;
+  background: #01589d;
+  
+  .message {
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    max-width: 1050px;
+    padding: 1em;
+    text-align: center;
+  }
+
+  a,
+  a:active {
+    color: #f1b521;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+
 .site-title h1 {
   margin:0;
   width:100%;

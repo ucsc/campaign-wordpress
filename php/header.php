@@ -66,6 +66,10 @@ wp_head();
 </head>
 
 <body class="layout">
+  <div class="closed-message">
+    <div class="message">The Campaign for UC Santa Cruz closed with $335 million raised.
+Visit <a href="https://giving.ucsc.edu">giving.ucsc.edu</a> to read all about it. Thank you!</div>
+  </div>
   <div class="container-fluid">
 
   <header>
