@@ -1,13 +1,15 @@
 /* CLOSED */
 
 .closed-message {
-  display: block;
-  width: 100%;
   background: #01589d;
+  display: block;
+  margin-bottom: 3em;
+  width: 100%;
   
   .message {
     color: #fff;
     display: block;
+    font-size: 1.75em;
     margin: 0 auto;
     max-width: 1050px;
     padding: 1em;
