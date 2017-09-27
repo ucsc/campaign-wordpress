@@ -22,7 +22,7 @@
 		 * Note on $depth: Counterintuitively, $depth here means the "depth right before we start this menu".
 		 *				   So basically add one to what you'd expect it to be
 		 */
-		function start_lvl(&$output, $depth)
+		function start_lvl(&$output, $depth = 0, $args = array() )
 		{
 			$tabs = str_repeat("\t", $depth);
 			// If we are about to start the first submenu, we need to give it a dropdown-menu class
@@ -39,7 +39,7 @@
 		 * Note on $depth: Counterintuitively, $depth here means the "depth right before we start this menu".
 		 *				   So basically add one to what you'd expect it to be
 		 */
-		function end_lvl(&$output, $depth)
+		function end_lvl(&$output, $depth = 0, $args = array())
 		{
 			if ($depth == 0) { // This is actually the end of the level-1 submenu ($depth is misleading here too!)
  
@@ -54,7 +54,7 @@
 		/* Output the <li> and the containing <a>
 		 * Note: $depth is "correct" at this level
 		 */
-		function start_el(&$output, $item, $depth, $args)
+		function start_el(&$output, $item, $depth = 0, $args = array(), $current_object_id = 0)
 		{
 			global $wp_query;
 			$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
@@ -105,7 +105,7 @@
 		 * Note: the <a> is already closed
 		 * Note 2: $depth is "correct" at this level
 		 */
-		function end_el (&$output, $item, $depth, $args)
+		function end_el (&$output, $item, $depth = 0, $args = array())
 		{
 			$output .= '</li>';
 			return;
